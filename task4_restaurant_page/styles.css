@@ -1,0 +1,659 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.navbar {
+    background-color: #000000;
+    overflow: hidden;
+    padding: 15px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+}
+
+.menu a:hover {
+    background-color: #555;
+}
+
+.mobile-menu-icon {
+    display: none;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+/* Media query for mobile view */
+@media only screen and (max-width: 768px) {
+    .menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        position: absolute;
+        background-color: #000000;
+        top: 60px;
+        left: 0;
+        z-index: 2;
+    }
+
+    .menu a {
+        padding: 15px;
+        display: block;
+    }
+
+    .navbar {
+        align-items: flex-start;
+    }
+
+    .mobile-menu-icon {
+        display: block;
+    }
+}
+
+/* Existing CSS for the navbar */
+
+.hero-section {
+    position: relative;
+    text-align: center;
+    background: #000000;
+    padding: 80px 0;
+    height: 70vh;
+}
+
+.hero-text {
+    width: fit-content;
+    margin: auto;
+    align-items: center;
+    text-align: center;
+    padding: 0px 50px 0px 0px;
+    z-index: 1;
+}
+
+.hero-text h1 {
+    font-size: 2em;
+    color: #ffffff;
+    letter-spacing: 2px;
+}
+.hero-text p{
+    color: #6a6969;
+    margin: auto;
+    padding: 0px 0px 0px 0px;
+    letter-spacing: 1px;    
+    font-size: medium;
+}
+
+.hero-images {
+    position: relative;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero-images img {
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.5s ease-in-out;
+}
+
+.rectangle {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #454545; /* Choose your desired background color */
+}
+
+.leftimg :nth-child(1){
+    height: 245px;
+    width: 340px;
+    top: -160px;
+    left: 10px;
+    z-index: 1;
+}
+.leftimg :nth-child(2){
+    height: 195px;
+    width: 275px;
+    top: -15px;
+    left: -75px;
+    z-index: 2;
+}
+.leftimg :nth-child(3){
+    height: 270px;
+    width: 360px;
+    top: -420px;
+    left: 0px;
+    z-index: 0;
+}
+.leftimg :nth-child(4){
+    height: 217px;
+    width: 295px;
+    top: -495px;
+    left: 260px;
+    z-index: 0;
+}
+
+
+.rightimg :nth-child(1){
+    height: 275px;
+    width: 375px;
+    top: -160px;
+    right: -130px;
+    z-index: 2;
+}
+
+.rightimg :nth-child(2){
+    height: 250px;
+    width: 270px;
+    top: 15px;
+    right: 20px;
+    z-index: 1;
+}
+.rightimg :nth-child(3){
+    height: 290px;
+    width: 350px;
+    top: -380px;
+    right: -230px;
+    z-index: 0;
+}
+
+
+.slide-in-left {
+    animation: slide-in-left 1s ease-out;
+}
+
+.slide-in-right {
+    animation: slide-in-right 1s ease-out;
+}
+
+@keyframes slide-in-left {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slide-in-right {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+/* Existing CSS for the navbar and hero section */
+
+.view-menu-btn {
+    display: inline-block;
+    padding: 15px;
+    margin-top: 20px;
+    color: #c0c0c0;
+    background-color: transparent;
+    border-radius: 5px;
+    border: none;
+    font-size: larger;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.view-menu-btn:hover {
+    transform: scale(1.1);
+}
+
+/* Existing CSS for the navbar and hero section */
+
+@media only screen and (max-width: 768px) {
+    .hero-section {
+        height: 80vh;
+        padding: 40px 0;
+        display: flex;
+        position: relative;
+    }
+    
+    .hero-section::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url('images/download.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-x: -120px;
+        opacity: 0.3;
+        z-index: 1;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Adjust the shadow properties as needed */
+    }
+    
+    /* Your other styles go here */
+    
+
+    .hero-text {
+        text-align: center;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Box shadow */
+        z-index: 1;
+    }
+
+    .hero-images {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .hero-images img {
+        width: 120px;
+        height: 120px;
+        overflow: hidden;
+        margin: 10px 0;
+        opacity: 0.7; /* Reduced opacity */
+        box-shadow: 0 0 8px rgba(0, 0, 0, 0.5); /* Box shadow */
+    }
+
+    .slide-in-left,
+    .slide-in-right {
+        animation: none; /* Disable the slide-in animation in mobile view */
+    }
+
+    .mobile-menu-icon {
+        display: block;
+    }
+    .rightimg,.leftimg{
+        display: none;
+    }
+    .leftimg :nth-child(2),
+    .leftimg :nth-child(3),
+    .leftimg :nth-child(4){
+        display: none;
+    }
+}
+
+/* Existing CSS for the desktop view and animations */
+
+
+/* Existing CSS for the navbar, hero section, and button */
+
+.our-story-section {
+    background-color: #f8f8f8;
+    padding: 140px 80px 80px 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.our-story-images {
+    display: flex;
+}
+
+.our-story-images img {
+    margin: 0 10px;
+    overflow: hidden;
+    position: relative;
+}
+.our-story-images :nth-child(1){
+    height: 200px;
+    width: 140px;
+    top: 160px;
+    left: 95px;
+    z-index: 2;
+}
+.our-story-images :nth-child(2){
+    height: 250px;
+    width: auto;
+    z-index: 1;
+}
+
+.our-story-images :nth-child(3){
+    border-radius: 50%;
+    border: 10px solid #454545; 
+    height: 130px;
+    width: 130px;
+    top: -75px;
+    left: -95px;
+    z-index: 2;
+}
+.our-story-images :nth-child(4){
+    height: 160px;
+    width: 245px;
+    top: 105px;
+    right: 170px;
+    z-index: 0;
+}
+.our-story-images :nth-child(5){
+    height: 110px;
+    width: 115px;
+    top: 265px;
+    left: 140px;
+    z-index: 0;
+}
+
+.slide-up {
+    animation: slide-up 1s ease-out;
+}
+
+.stay-middle {
+    animation: stay-middle 1s ease-out;
+}
+
+.slide-down {
+    animation: slide-down 1s ease-out;
+}
+
+.our-story-text {
+    width: 50%;
+}
+
+.our-story-text h2 {
+    font-size: 2em;
+    color: #333;
+}
+
+.our-story-text p {
+    color: #555;
+}
+
+@keyframes slide-up {
+    from {
+        transform: translateY(100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes stay-middle {
+    from, to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes slide-down {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+/* Existing CSS for the navbar, hero section, button, and our story section */
+
+@media only screen and (max-width: 768px) {
+    .our-story-section {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .our-story-images {
+        display: none; /* Hide the image container in mobile view */
+    }
+
+    .our-story-text {
+        position: relative;
+        width: 100%;
+        margin-top: 20px;
+        padding: 50px;
+        border-radius: 10px;
+        z-index: 1;
+        background: #000000;
+    }
+    
+    .our-story-text::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url('images/images\ \(1\).jpg'); /* Replace with your background image */
+        background-size: cover;
+        background-position: center;
+        opacity: 0.5; /* Adjust the opacity as needed */
+        border-radius: 10px;
+        z-index: 0;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Box shadow */
+    }
+    
+    .our-story-text h2,
+    .our-story-text p {
+        position: relative;
+        z-index: 1;
+        /* Additional styles for text */
+    }
+    
+
+    .our-story-text h2 {
+        font-size: 2em;
+        letter-spacing: 2px;
+        word-spacing: 1px;
+        color: #ffffff;
+    }
+
+    .our-story-text p {
+        color: #ffffff;
+        line-height: 25px;
+        word-spacing: 1px;
+        font-size: 15px;
+    }
+
+    .slide-up,
+    .stay-middle,
+    .slide-down {
+        animation: none; /* Disable the slide-in animation in mobile view */
+    }
+}
+
+/* Existing CSS for the navbar, hero section, button, our story section, and our menu section */
+
+.our-menu-section {
+    background-color: #f8f8f8;
+    padding: 80px 0;
+}
+
+.our-menu-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.our-menu-header h2 {
+    font-size: 2em;
+    color: #333;
+    letter-spacing: 2px;
+    margin-bottom: 0;
+}
+
+.explore-menu-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #6d6d6d;
+    background-color: transparent;
+    border-radius: 5px;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.explore-menu-btn:hover {
+    transform: scale(1.1);
+}
+
+.menu-slider {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.menu-category {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.menu-category img {
+    width: 100%;
+    max-width: 180px;
+    height: 275px;
+    margin-bottom: 10px;
+}
+
+.menu-category h3{
+    margin-bottom: 0;
+}
+
+
+.explore-more-btn {
+    display: inline-block;
+    padding: 8px 15px;
+    text-decoration: none;
+    color: #626262;
+    background-color: transparent;
+    border-radius: 5px;
+    margin-top: 5px;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.explore-more-btn:hover {
+    transform: scale(1.1);
+}
+
+.slider-controls{
+    display: none;
+}
+/* Existing CSS for the navbar, hero section, button, our story section, and our menu section */
+
+@media only screen and (max-width: 768px) {
+    .menu-slider {
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .menu-category {
+        text-align: center;
+        width: 100%;
+        padding: 0 10px;
+        box-sizing: border-box;
+        display: none;
+    }
+
+    .menu-category img {
+        width: 100%;
+        max-width: 200px;
+        border-radius: 10px;
+        margin-bottom: 10px;
+    }
+
+    .slider-controls {
+        display: flex;
+        justify-content: space-between; /* Center the buttons horizontally */
+        align-items: center; /* Center the buttons vertically */
+        text-align: center;
+        position: absolute;
+        width: 100%;
+        bottom: -175%; /* Adjust the percentage value */
+    }
+
+    .prev-btn,
+    .next-btn {
+        display: inline-block;
+        padding: 8px 15px;
+        text-decoration: none;
+        color: #c3c3c3;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    }
+
+    .prev-btn:hover,
+    .next-btn:hover {
+        transform: scale(1.1);
+        background-color: transparent;
+    }
+}
+
+
+/* Existing CSS for the navbar, hero section, button, our story section, and our menu section */
+/* Existing CSS for the navbar, hero section, button, our story section, and our menu section */
+
+.bottom-navigation-section {
+    background-color: #000000;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.column {
+    text-align: center;
+    padding: 30px;
+}
+.column a{
+    color: white;
+    text-decoration: none;
+}
+
+.contact-details,
+.opening-hours {
+    text-align: left;
+}
+.column i{
+    margin-right: 10px;
+}
+
+.column h3 {
+    margin-bottom: 10px;
+}
+
+.column p {
+    margin: 15px 10px;
+}
+
+/* Mobile view styles */
+@media only screen and (max-width: 768px) {
+    .bottom-navigation-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .heading {
+        order: -1; /* Move the heading to the top */
+    }
+
+    .column {
+        width: 100%; /* Take full width in mobile view */
+        text-align: left; /* Align text to the left in mobile view */
+        margin-bottom: 10px; /* Add some spacing between columns in mobile view */
+        padding: 10px 0;
+    }
+
+    /* Additional styles for mobile view */
+    .contact-details,
+    .opening-hours {
+        order: 0; /* Change the order to align in a row */
+        width: 100%; /* Take full width in mobile view */
+        margin-bottom: 0; /* Remove spacing between rows */
+    }
+}
+
+

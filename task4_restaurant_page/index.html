@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/62872497bf.js" crossorigin="anonymous"></script>
+    <title>RJ Tasties</title>
+</head>
+<body>
+
+<div class="navbar">
+    <div class="logo">RJ Tasties</div>
+    <div class="menu">
+        <a href="#">Home</a>
+        <a href="#">Menu</a>
+        <a href="#">About Us</a>
+    </div>
+    <div class="mobile-menu-icon">&#9776;</div>
+</div>
+
+<!-- Existing HTML code -->
+
+<div class="hero-section">
+    <div class="hero-text">
+        <h1>RJ Tasties</h1>
+        <p>"Savor the extraordinary <br> where each dish is a masterpiece, <br> and every moment is a celebration of flavor."</p>
+        <button class="view-menu-btn"  onclick="scrollToMenu()"> View Menu <i class="fa-solid fa-arrow-right fa-xs" style="margin-left: 5px;"></i></button>
+    </div>
+    <div class="hero-images">
+        <div class="leftimg" style="position: absolute; left: 20px;">
+        <img src="images/download.jpg" alt="Image 1" class="slide-in-left">
+        <img src="images/images (1).jpg" alt="Image 2" class="slide-in-right">
+        <div class="rectangle slide-in-left"></div>
+        <div class="rectangle slide-in-right"></div>
+
+    </div>
+    <div class="rightimg" style="position: absolute; right: 20px;">
+        <img src="images/images.jpg" alt="Image 1" class="slide-in-left">
+        <img src="images/images (2).jpg" alt="Image 2" class="slide-in-right">
+        <div class="rectangle slide-in-right"></div>
+
+    </div>
+    </div>
+</div>
+
+<!-- Existing HTML code -->
+
+<div class="our-story-section">
+    <div class="our-story-images" style="position: relative;">
+        <img src="images/images (2).jpg" alt="Image 3" class="slide-up">
+        <img src="images/images (1).jpg" alt="Image 4" class="stay-middle">
+        <img src="images/images.jpg" alt="Image 5" class="slide-down">
+        <div class="rectangle stay-middle" style="position: absolute; z-index: 0;"></div>
+        <div class="rectangle slide-up" style="position: absolute; z-index: 0;"></div>
+    </div>
+    <div class="our-story-text">
+        <h2>Our Story</h2>
+        <p>
+            "Indulge in a symphony of flavors, where every dish tells a story. At RJ Tasties, we believe that good food is the foundation of genuine happiness. Savor the moment, celebrate life, and let our culinary creations elevate your dining experience. 
+            We don't just serve meals; we craft memories that linger on the palate. Welcome to a world where passion meets the plate, and every bite is a journey worth savoring. Bon appétit!"
+        </p>
+    </div>
+</div>
+
+<!-- Existing HTML code -->
+
+<div class="our-menu-section">
+    <div class="our-menu-header">
+        <h2>OUR MENU</h2>
+        <a href="#" class="explore-menu-btn">Explore Our Menu <i class="fa-solid fa-arrow-right fa-xs" style="margin-left: 5px;"></i></a>
+    </div>
+    <div class="menu-slider">
+        <div class="menu-category">
+            <img src="images/starters.jpg" alt="Starters">
+            <h3>Starters</h3>
+            <a href="#" class="explore-more-btn">Explore More <i class="fa-solid fa-caret-right fa-xs" style="margin-left: 5px;"></i></a>
+        </div>
+        <div class="menu-category">
+            <img src="images/vegmaincourse.jpg" alt="Veg Main Course">
+            <h3>Veg Main Course</h3>
+            <a href="#" class="explore-more-btn">Explore More <i class="fa-solid fa-caret-right fa-xs" style="margin-left: 5px;"></i></a>
+        </div>
+        <div class="menu-category">
+            <img src="images/nonvegmaincourse.jpeg" alt="Non-Veg Main Course">
+            <h3>Non-Veg Main Course</h3>
+            <a href="#" class="explore-more-btn">Explore More <i class="fa-solid fa-caret-right fa-xs" style="margin-left: 5px;"></i></a>
+        </div>
+        <div class="menu-category">
+            <img src="images/desserts.jpg" alt="Desserts">
+            <h3>Desserts</h3>
+            <a href="#" class="explore-more-btn">Explore More<i class="fa-solid fa-caret-right fa-xs" style="margin-left: 5px;"></i></a>
+        </div>
+        <div class="menu-category">
+            <img src="images/drinks.jpg" alt="Drinks">
+            <h3>Drinks</h3>
+            <a href="#" class="explore-more-btn">Explore More <i class="fa-solid fa-caret-right fa-xs" style="margin-left: 5px;"></i></a>
+        </div>
+    </div>
+    <div class="slider-controls">
+        <button class="prev-btn"><i class="fa-solid fa-chevron-left fa-2xl"></i></button>
+        <button class="next-btn"><i class="fa-solid fa-chevron-right fa-2xl"></i></button>
+    </div>
+</div>
+
+<!-- Existing HTML code -->
+
+<div class="bottom-navigation-section">
+    <div class="column contact-details">
+        <h3>Contacts</h3>
+        <p><i class="fa-solid fa-location-dot"></i>Location: 123 Main Street, Cityville</p>
+        <p><i class="fa-solid fa-phone"></i>Phone: +1 (123) 456-7890</p>
+    </div>
+    <div class="column heading">
+        <h3>RJ Tasties</h3>
+        <a href=""><i class="fa-brands fa-facebook"></i></a> <a href=""><i class="fa-brands fa-instagram"></i> </a> <a href=""> <i class="fa-brands fa-twitter"></i></a> <a href=""><i class="fa-brands fa-whatsapp"></i></a> <a href=""><i class="fa-brands fa-youtube"></i></a>
+    </div>
+    <div class="column opening-hours">
+        <h3>Opening Hours</h3>
+        <p><i class="fa-regular fa-calendar-days"></i>Monday - Sunday</p>
+        <p><i class="fa-regular fa-sun"></i>10:00 AM - 11:00 PM</p>
+        <p><i class="fa-solid fa-moon"></i>Saturday - Sunday: 10:00 AM - 11:00 PM</p>
+    </div>
+</div>
+
+<!-- Rest of your content goes here -->
+
+
+<script src="script.js"></script>
+</body>
+</html>
