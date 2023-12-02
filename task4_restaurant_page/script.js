@@ -89,3 +89,23 @@ document.addEventListener('DOMContentLoaded', function () {
     // Scroll smoothly to the target element
     menuSection.scrollIntoView({ behavior: 'smooth' });
 }
+
+
+function scrollToContact() {
+  // Get the target element by its class name
+  const menuSection = document.getElementsByClassName('contact-details-section')[0];
+
+  // Scroll smoothly to the target element
+  menuSection.scrollIntoView({ behavior: 'smooth' });
+}
+
+
+document.addEventListener('DOMContentLoaded', function () {
+  const menuRows = document.querySelectorAll('.menu-row');
+
+  menuRows.forEach(function (row) {
+      row.addEventListener('click', function () {
+          this.classList.toggle('expanded');
+      });
+  });
+});
